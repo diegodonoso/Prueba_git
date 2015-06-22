@@ -1,0 +1,48 @@
+//centro
+
+gfh=params["gfhuser"].value.substr(0,13);
+red=gfh.substr(0,1);
+ambito=gfh.substr(2,2);
+grupo=gfh.substr(5,3);
+centro=gfh.substr(9,4);
+if (centro=="0034") centro="0000";
+salida=gfh;					//nivel4	n.nn.nnn.nnnn
+if (centro=="0000") salida=gfh.substr(0,8);	//nivel3	n.nn.nnn.xxxx
+if (grupo=="XXX")   salida=gfh.substr(0,4);	//nivel2	n.nn.xxx.xxxx
+if (ambito=="XX")   salida=gfh.substr(0,1);	//nivel1	n.xx.xxx.xxxx
+if (red=="0") 	    salida="";			//nivel0	x.xx.xxx.xxxx
+salida="0"+salida;
+
+
+seccion
+
+seccion=params["gfhuser"].value.substr(14,4);
+salida=seccion;							//nivel4	xxxx
+if(seccion.substr(3,1)=="0") salida=seccion.substr(0,3);	//nivel3	xxx0
+if(seccion.substr(2,2)=="00") salida=seccion.substr(0,2);	//nivel2	xx00
+if(seccion.substr(1,3)=="000") salida=seccion.substr(0,1); 	//nivel1	x000
+if((seccion=="0000")||(seccion=="0610")) salida="";		//nivel0	0000 o 0610
+salida="0"+salida;
+
+
+where year = ? 	and '0'||gfh like ?||'%' and '0'||section_code like ?||'%'
+		and '0'||gfh like ?||'%' and '0'||gfhsec like ?||'%'
+
+
+
+gfh=params["gfhuser"].value.substr(14,13);
+geren=gfh.substr(0,1);
+divis=gfh.substr(2,2);
+area=gfh.substr(5,3);
+seccion=gfh.substr(9,4);
+salida=gfh;					//nivel4	n.nn.nnn.nnnn
+if(seccion=="XXXX") salida=gfh.substr(0,8);	//nivel3	n.nn.nnn.xxxx
+if(area=="XXX") salida=gfh.substr(0,4);		//nivel2	n.nn.xxx.xxxx
+if(divis=="XX") salida=gfh.substr(0,1);		//nivel1	n.xx.xxx.xxxx
+if(geren=="0") salida="";			//nivel0	0.xx.xxx.xxxx
+salida="0"+salida;
+
+
+
+
+
