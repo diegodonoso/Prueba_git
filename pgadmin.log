@@ -1,0 +1,272 @@
+2015-04-28 11:25:41 ERROR  : ERROR:  relation "f_assi_cirugias" does not exist
+LINE 1: INSERT INTO f_assi_cirugias (ev_cmpt, ev_diag_ppal, ev_diag_...
+                    ^
+2015-04-28 19:35:38 ERROR  : ERROR:  column "xpersona_id_1" of relation "f_base_wage" does not exist
+LINE 1: ...pe, xccc_id, xcategoria_id, tiporeg, concept_fix, xpersona_i...
+                                                             ^
+2015-04-28 19:45:21 ERROR  : ERROR:  null value in column "section_id" violates not-null constraint
+DETAIL:  Failing row contains (43105614980, 640100, R, 20150401, FSOC, 41, null, 0116, 2204, 1, 1, 20, 549.63, null, null, 39726226M, 690, 1.13.110.0116, null, null, null, null, 5).
+2015-04-29 10:16:39 ERROR  : ERROR:  column "ev_cmpt" does not exist
+LINE 5: ... xidentificador='49978127R' and seccio='0142' and ev_cmpt>20...
+                                                             ^
+2015-04-29 10:33:19 ERROR  : ERROR:  cannot cast type integer to date
+LINE 1: select cast(20150401 as date)
+               ^
+2015-04-29 10:34:53 ERROR  : ERROR:  syntax error at or near "as"
+LINE 1: select convert('20150430' as date)+1
+                                  ^
+2015-04-29 10:35:58 ERROR  : ERROR:  cannot cast type date to integer
+LINE 1: select cast(cast('20150430' as date)+1 as integer)
+               ^
+2015-04-29 10:36:11 ERROR  : ERROR:  cannot cast type date to integer
+LINE 1: select cast((cast('20150430' as date)+1) as integer)
+               ^
+2015-04-29 10:36:39 ERROR  : ERROR:  syntax error at end of input
+LINE 1: select (cast('20150430' as date)+1
+                                          ^
+2015-04-29 10:36:53 ERROR  : ERROR:  function year(date) does not exist
+LINE 1: select year(cast('20150430' as date)+1)
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-04-29 10:41:32 ERROR  : ERROR:  syntax error at or near "and"
+LINE 2: and ev_event=3;
+        ^
+2015-04-29 10:41:38 ERROR  : ERROR:  syntax error at or near ","
+LINE 1: ...ar(cast(20150331::CHARACTER(8) as date)+1,'YYYYMMDD')::INT),
+                                                                      ^
+2015-04-29 14:44:23 ERROR  : ERROR:  syntax error at or near "inner"
+LINE 7: ...tall where datelink between 20150101 and 20150131 inner join...
+                                                             ^
+2015-04-29 14:45:26 ERROR  : ERROR:  syntax error at or near "as"
+LINE 10: 0 as mes, 
+           ^
+2015-04-29 14:46:20 ERROR  : ERROR:  column "d_center_gfh" does not exist
+LINE 2: d_center_gfh,empresa,
+        ^
+2015-04-29 14:47:18 ERROR  : ERROR:  column "gfh_cond_cent" does not exist
+LINE 9: and '0'||gfh_cond_cent like '0%'
+                 ^
+2015-04-29 14:53:20 ERROR  : ERROR:  column "bns_posts_gfh_cent" does not exist
+LINE 10: and '0'||gfh_cod_cent like bns_posts_gfh_cent
+                                    ^
+2015-04-29 16:03:56 ERROR  : ERROR:  syntax error at or near "'0'"
+LINE 6: '0'||gfh_cod_cent like '0'||'%' and '0'||section_code like '...
+        ^
+2015-04-29 16:05:32 ERROR  : ERROR:  column "company_name" does not exist
+LINE 1: SELECT distinct empresa,company_name
+                                ^
+2015-04-29 17:23:25 ERROR  : ERROR:  operator does not exist: integer =?
+LINE 8: ...d_center_gral on d_center_id =center_id and d_center_year=? 
+                                                                    ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2015-04-29 17:23:33 ERROR  : ERROR:  column "r_hhrr_wage_tall.empresa" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 2: 'ant' as tipo,empresa,
+                      ^
+2015-04-29 18:44:38 ERROR  : ERROR:  column "horas" does not exist
+LINE 2: distinct gfh_cod_cent, section_code, sum(horas)
+                                                 ^
+2015-04-29 18:45:25 ERROR  : ERROR:  column "d_center_gral.gfh_cod_cent" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 2: distinct gfh_cod_cent, section_code, sum(hores)
+                 ^
+2015-04-29 19:50:01 ERROR  : ERROR:  syntax error at or near "version"
+LINE 3:   FROM diagnosticoshos were version like '%STA'
+                                    ^
+2015-04-29 19:50:31 ERROR  : ERROR:  function rigth(text, integer) does not exist
+LINE 3:   FROM diagnosticoshos where rigth(version,3) ='STA'
+                                     ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-04-30 11:47:13 ERROR  : ERROR:  relation "rep_rrhh_pers" already exists
+2015-04-30 12:38:38 ERROR  : ERROR:  column "concept_id" does not exist
+LINE 3: and concept_id in(11,140)
+            ^
+2015-04-30 12:43:09 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-04-30 12:43:17 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-04-30 16:34:45 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-04-30 16:39:23 ERROR  : ERROR:  syntax error at or near "("
+LINE 2: sum(import) as importe
+           ^
+2015-04-30 16:39:31 ERROR  : ERROR:  column "import" does not exist
+LINE 2: sum(import) as importe
+            ^
+2015-05-01 10:37:29 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-05-04 08:25:56 ERROR  : ERROR:  syntax error at or near "select"
+LINE 4: select distinct  version,tipoasidataasi::char(4) FROM diagno...
+        ^
+2015-05-04 10:57:01 ERROR  : ERROR:  relation "f_base_wage" does not exist
+LINE 1: update f_base_wage set xhores=0, xppe=0 where subsec='5' and...
+               ^
+2015-05-06 13:47:48 ERROR  : ERROR:  relation "f_hhrr_absentism" does not exist
+LINE 1: delete from f_hhrr_absentism where record_type in('EPE','EPC...
+                    ^
+2015-05-07 11:57:47 ERROR  : ERROR:  column "concepto" does not exist
+LINE 1: select distinct concepto FROM pressupost_sortida 
+                        ^
+2015-05-08 09:58:44 ERROR  : ERROR:  column "d_center.net_code" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select net_code,sum(import) as importe FROM r_hhrr_wage_tots...
+               ^
+2015-05-08 10:00:39 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 2: ...9' and datelink between 20150101 and 20150401 and net_code=1
+                                                                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2015-05-08 11:06:08 ERROR  : ERROR:  failed to find conversion function from unknown to text
+2015-05-08 13:43:21 ERROR  : ERROR:  syntax error at or near "2"
+LINE 1: ...v_priority FROM f_assi_activity where ev_event in 2,4 and ev...
+                                                             ^
+2015-05-08 13:43:30 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 1: ...i_activity where ev_event in (2,4) and ev_priority=4 and ev_...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2015-05-08 13:47:48 ERROR  : ERROR:  column "ev_priority" does not exist
+LINE 3: where ev_priority='4'
+              ^
+2015-05-12 17:46:17 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 1: delete from FROM f_hhrr_wage_tots1 where tip='P' and datelin...
+                    ^
+2015-05-13 09:50:57 ERROR  : ERROR:  operator does not exist: character varying <>= unknown
+LINE 8: ...oncepts on concepte=concept_id and concept_group_code<>='10'
+                                                                ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2015-05-13 09:56:10 ERROR  : ERROR:  syntax error at or near "selec"
+LINE 1: selec * from f_hhrr_wage_budget limit 100
+        ^
+2015-05-13 10:31:43 ERROR  : ERROR:  column "origin" does not exist
+LINE 1: SELECT origin,sum (import)
+               ^
+2015-05-13 11:27:09 ERROR  : ERROR:  syntax error at or near ","
+LINE 3:        g_cat, concepte, import*,1 as import, hores, ppes, xi...
+                                       ^
+2015-05-13 11:33:11 ERROR  : ERROR:  column "f_hhrr_wage_budget.subseccio" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 6:  order by origen,subseccio
+                         ^
+2015-05-13 11:45:33 ERROR  : ERROR:  column "f_hhrr_wage_budget.subseccio" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 6:  order by origen,subseccio
+                         ^
+2015-05-13 15:04:17 ERROR  : ERROR:  relation "d_hhrr_concepts" does not exist
+LINE 4:   FROM pressupost_sortida inner join d_hhrr_concepts on conc...
+                                             ^
+2015-05-14 09:14:01 ERROR  : SSL SYSCALL error: Software caused connection abort (0x00002745/10053)
+2015-05-14 09:46:48 ERROR  : SSL SYSCALL error: Software caused connection abort (0x00002745/10053)
+2015-05-14 09:46:51 ERROR  : ERROR:  operator does not exist: character = integer
+LINE 29: where ev_date = 201504 
+                       ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2015-05-14 09:47:10 ERROR  : ERROR:  column "r_assi_espec.red" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 2:  red as xarxa, 
+         ^
+2015-05-14 09:49:34 ERROR  : ERROR:  column "red" does not exist
+LINE 17:  red as xarxa, 
+          ^
+2015-05-14 09:54:23 ERROR  : ERROR:  column "orden" does not exist
+LINE 1: select categoria1,orden,categoria from(
+                          ^
+2015-05-14 09:56:08 ERROR  : ERROR:  column "seccio" does not exist
+LINE 1: select categoria1,categoriaorden,categoria,seccio from(
+                                                   ^
+2015-05-14 12:22:01 ERROR  : ERROR:  la relación «f_hhrr_wage_budget» ya existe
+2015-05-14 12:31:11 ERROR  : ERROR:  syntax error at end of input
+LINE 4: 
+        ^
+2015-05-14 12:32:08 ERROR  : ERROR:  relation "f_assi_ciriugias" does not exist
+LINE 2:   FROM f_assi_ciriugias where ev_loc=40 and ev_cmpt>201400
+               ^
+2015-05-14 12:32:17 ERROR  : ERROR:  column "ev_event" does not exist
+LINE 1: SELECT distinct ev_event, ev_loc,ev_cmpt
+                        ^
+2015-05-14 12:33:42 ERROR  : ERROR:  relation "f_assi_queue_amb" does not exist
+LINE 1: select * from f_assi_queue_amb limit 100
+                      ^
+2015-05-14 12:33:57 ERROR  : ERROR:  syntax error at or near "where"
+LINE 1: select * from f_assi_queueamb limit 100 where ev_loc=40
+                                                ^
+2015-05-14 13:29:37 ERROR  : ERROR:  column "ev_cmpt" does not exist
+LINE 1: delete from f_cuboxs where ev_loc=40 and ev_cmpt>201410 
+                                                 ^
+2015-05-14 17:01:21 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 6:   FROM genexpediente WHERE paciente=1616148
+                                           ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2015-05-20 17:10:26 ERROR  : ERROR:  syntax error at or near "FROM"
+LINE 2:   FROM d_patients_abs limit 100
+          ^
+2015-05-20 17:12:04 ERROR  : ERROR:  function last(character varying) does not exist
+LINE 1: SELECT ev_patient, last(ev_abs) as abs
+                           ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-05-20 17:23:19 ERROR  : ERROR:  function first(character varying) does not exist
+LINE 1: SELECT ev_patient, first(ev_abs) as abs
+                           ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-05-20 17:24:20 ERROR  : ERROR:  function first(character varying) does not exist
+LINE 1: SELECT ev_patient, first(ev_abs) as abs
+                           ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-05-20 17:24:31 ERROR  : ERROR:  function last(character varying) does not exist
+LINE 1: SELECT ev_patient, last(ev_abs) as abs
+                           ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-05-20 17:24:49 ERROR  : ERROR:  syntax error at or near "as"
+LINE 1: SELECT ev_patient, last ev_abs as abs
+                                       ^
+2015-05-20 17:25:02 ERROR  : ERROR:  column "last" does not exist
+LINE 1: SELECT ev_patient, last ev_abs 
+                           ^
+2015-05-20 17:25:07 ERROR  : ERROR:  column "last" does not exist
+LINE 1: SELECT ev_patient, last ev_abs 
+                           ^
+2015-05-20 17:27:03 ERROR  : ERROR:  function first(integer) does not exist
+LINE 1: select first(column1), last(column1) from (values (null),(1)...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2015-05-20 17:35:31 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 9: and ev_patient=1
+                      ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2015-05-20 17:37:04 ERROR  : ERROR:  relation "d_patient_abs" does not exist
+LINE 1: insert into d_patient_abs (ev_patient
+                    ^
+2015-05-20 19:42:41 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2015-06-03 10:05:08 ERROR  : ERROR:  syntax error at or near "where"
+LINE 2: where bns_posts_login='simpple' and (bns_empresas='*' or pos...
+        ^
+2015-06-03 10:05:14 ERROR  : ERROR:  column "empresa" does not exist
+LINE 2: ...login='simpple' and (bns_empresas='*' or position(empresa in...
+                                                             ^
+2015-06-03 11:13:06 ERROR  : ERROR:  syntax error at or near "where"
+LINE 7: where cmpt>201500 
+        ^
+2015-06-03 18:40:32 ERROR  : ERROR:  column reference "section_code" is ambiguous
+LINE 2:        center_id, section_id, center_code, section_code, sub...
+                                                   ^
+2015-06-04 09:01:59 ERROR  : ERROR:  syntax error at or near "antd"
+LINE 3: antd tiporeg='Z'
+        ^
+2015-06-04 09:05:54 ERROR  : ERROR:  column "tipus" does not exist
+LINE 1: select * from f_hhrr_wage_tots1 where tipus='R' limit 100
+                                              ^
+2015-06-04 09:38:05 ERROR  : ERROR:  syntax error at or near "datelink"
+LINE 1: ...f_hhrr_wage_tots1 where tip='P'  AND center_id=83 datelink>2...
+                                                             ^
+2015-06-04 09:38:46 ERROR  : ERROR:  relation "r_hhrr_wage_tots1" does not exist
+LINE 1: select * from r_hhrr_wage_tots1 where tip='P'  AND center_id...
+                      ^
+2015-06-10 16:56:29 ERROR  : Error connecting to the server: could not translate host name "bi.higia.sta2.es" to address: Unknown server error
+
+2015-06-10 17:02:58 ERROR  : ERROR:  column "d_center_code" does not exist
+LINE 7:   where date_def>20150101 and d_center_code is null
+                                      ^
+2015-06-10 17:12:08 ERROR  : ERROR:  invalid input syntax for integer: ""
+LINE 6:   FROM contabilidad where gfh_cent =''
+                                            ^
+2015-06-15 10:29:05 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
